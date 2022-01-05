@@ -109,3 +109,79 @@ refer others:
     return -1;
 ```
 
+
+Tree 
+====
+
+Sorted arry to BST
+----
+1. find mid
+2. left and right child use function.
+
+```cpp
+TreeNode* sortedArrayToBST(vector<int>& nums) {
+        if(nums.size() == 0)
+        {
+            return nullptr;
+        }
+        int mid = (nums.size() + 1)/2 - 1;
+        TreeNode *root = new TreeNode;
+        root->val = nums[mid];
+        
+        if(nums.size() <2)
+        {
+            return root;
+        }
+        
+        vector<int> l;
+        vector<int> r;
+        for(int i = 0; i < mid;i++)
+        {
+            l.push_back(nums[i]);
+        }
+        for(int i = mid+1; i < nums.size();i++)
+        {
+            r.push_back(nums[i]);
+        }
+        root->left = sortedArrayToBST(l);
+        root->right = sortedArrayToBST(r);
+        
+        return root;
+    }
+```
+
+
+
+Finding some path
+--
+#112
+
+```cpp
+bool hasPathSum(TreeNode* root, int targetSum) {
+        int sum = targetSum;
+        if(root != nullptr)
+        {
+            sum = sum - root->val;
+            if(root->left == nullptr && root->right == nullptr && sum == 0)
+            {
+                return true;
+            } else if (root->left == nullptr && root->right == nullptr) {
+                return false;
+            }
+            
+            bool l = hasPathSum(root->left, sum);
+            bool r = hasPathSum(root->right,sum);
+            
+            if(l||r)
+            {
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
+            
+        }
+        return false;
+    }
+```
