@@ -185,3 +185,16 @@ bool hasPathSum(TreeNode* root, int targetSum) {
         return false;
     }
 ```
+
+
+About String
+=====
+Longest Substring Without Repeating Characters
+--
+Using slide window. (leetcode 3)
+Still slow and used lot of memories.
+
+related operation: 
+string.size()
+string.find() return index if exist, return -1 if not exist.
+adding new char to string -> using s1 + s2.
