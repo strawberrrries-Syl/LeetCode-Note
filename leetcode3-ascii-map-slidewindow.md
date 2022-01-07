@@ -4,7 +4,7 @@ map operations
 --
 1. init: map<type1, type2>
 
-2. map.find(), if exist, return loc, if not return end().
+2. map.find(), if exist, return loc, if not return map.end().  Usually using map.find(x) == map.end() express map does not have certain key.
 
 3. map.insert(pair<type1, type2> (key, value))  
 
