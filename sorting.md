@@ -3,9 +3,9 @@
 
 Sorting for vector
 --
-
-sort(vector.begin(),vector.end());
-
+```cpp
+sort(vector.begin(), vector.end());
+```
 get kth value.
 
 
@@ -13,3 +13,13 @@ get kth value.
 ===
 bucket sort
 ---
+
+* *About map & unordered_map*
+
+  map = TreeMap;
+
+  unordered_map = HashMap
+  
+ * About bucket sort
+
+    put same frequency charaters in same bucket (sorted), get desired from back to start.
