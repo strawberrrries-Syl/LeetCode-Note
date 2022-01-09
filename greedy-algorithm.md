@@ -145,4 +145,12 @@ int maxProfit(vector<int>& prices) {
     }
 ```
 
+392 Is Subsequence
+===
+easy one.
 
+*Important: About ```string.find()```
+--
+
+* for string.find(), if not exist in string, return -1.
+* string.find(str, pos), can find str from position pos.
