@@ -12,4 +12,8 @@ to_string(int);
 
 ```cpp
 stoi(string);
+stof();
+stol();
+stod();
+//...
 ```
