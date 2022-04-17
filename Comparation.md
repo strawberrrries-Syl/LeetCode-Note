@@ -9,3 +9,28 @@ Want to sort vectors by the first thing in them:
         
         sort(intervals.begin(), intervals.end(),compare);
 ```
+**important**
+the ```cmp``` function must return a bool ans.
+
+You can use this sort function in struct. As below:
+```cpp
+struct someThing {
+        string name;
+        int age;
+        int height;
+        string birthday;
+
+        someThing()
+        {
+            name = "";
+            age = 0;
+            height = 0;
+            birthday = "";
+        };
+    };
+    
+  auto cmp2 = [](someThing& a, someThing& b) {
+        return a.age > b.age;
+    };
+
+```
