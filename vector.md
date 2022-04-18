@@ -1,6 +1,7 @@
 ## 1. insert
 ```cpp
 vec.insert(pos,elem); // insert new element at position.
+```
 
 ## 2. erase()
 ```cpp
