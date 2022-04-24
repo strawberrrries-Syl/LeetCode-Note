@@ -1,6 +1,10 @@
 ## 1. insert
 ```cpp
 vec.insert(pos,elem); // insert new element at position.
+
+// How to use:
+auto it = vec.insert(vec.bigin(), 1);   // insert 1 on position 0
+
 ```
 
 ## 2. erase()
