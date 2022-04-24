@@ -8,6 +8,7 @@ Want to sort vectors by the first thing in them:
         };
         
         sort(intervals.begin(), intervals.end(),compare);
+        // sort as small to big
 ```
 **important**
 the ```cmp``` function must return a bool ans.
