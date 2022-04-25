@@ -21,3 +21,6 @@ You can return the answer in any order.
 When the array is not sorted, we can put them in hash map.
 not map<int, int>, but map<int, vector<int>>
 ! can store multiple position.
+
+**Important**
+  INT_MAX INT_MIN
