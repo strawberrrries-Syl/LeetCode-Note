@@ -24,3 +24,9 @@ not map<int, int>, but map<int, vector<int>>
 
 **Important**
   INT_MAX INT_MIN
+
+## About Dynamic Programming:
+  
+  1. split to small problem.
+  2. remember several answers.
+  
