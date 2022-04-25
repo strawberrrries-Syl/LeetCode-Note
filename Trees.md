@@ -5,14 +5,14 @@ Tree is a non-linear structure. A recursive data structure.
 * each nodes only have 1 incoming node (except the root).
 
 ## Binary Tree
+```cpp
 struct TreeNode
 {
   int val;
   TreeNode* left;
   TreeNode* right;
-  
 }
-
+```
 
 
 ## Application:
