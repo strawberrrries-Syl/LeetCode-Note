@@ -28,6 +28,7 @@ stringstream s;
 s << a;
 s >> sa;
 s.clear();  // need
+```
 
 ### 2. trun string to int
 ```cpp
@@ -40,5 +41,5 @@ public:
         return x;
     }
 };
-```
+
 ```
