@@ -49,3 +49,33 @@ string s = "some string";
  ```
 OUTPUT:
 `"some string"`
+
+
+# CS106B - Functions
+## Why Function?
+*1. avoid repeating*
+
+*2. Decompose functions*
+
+**Important: ** You cannot put function behind main() function. You can declare first and write later.
+
+```cpp
+//function prototype
+
+// main
+
+// function body
+```
+
+## value semantics and reference semantics
+```cpp
+void func(int a)    // a will not change
+{
+  sentance;
+}
+
+void func(&int a)   // a do change
+{
+  sentance; 
+}
+```
