@@ -21,7 +21,7 @@ unordered_map<key, value> name;
 map.find(key) != map.end(); // key exist
 // if want to get value from find function
 map.find(key)->first; // aim key
-mapfind(key)->second; // aim value
+map.find(key)->second; // aim value
 
 map.insert(pair <string, double> (key, value));
 // or
