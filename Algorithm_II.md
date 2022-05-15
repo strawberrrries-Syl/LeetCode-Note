@@ -1,6 +1,6 @@
 # 15. 3Sum
 ## About max:
-```java
+```cpp
 max({int1, in2, in3});  //get max value from a set of number.
 ```
 ## Thinking
@@ -16,6 +16,13 @@ For finding the intersection
 this can help us solve it.
 
 # 94. Binary Tree Inorder Traversal
+## Traversal term:
 `Inorder Traversal` -- 中序遍历
 `Preorder Traversal` -- 前序遍历
 `Postorder Traversal` -- 后序遍历
+
+## Combine vectors
+```cpp
+vector1, vector2;
+vector1+vector2 = vector1.insert(vector1.end(), vector2.begin(), vector2.end());
+```
