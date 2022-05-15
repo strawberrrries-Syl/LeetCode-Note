@@ -8,3 +8,9 @@ max({int1, in2, in3});  //get max value from a set of number.
 2. Hashmap is faster than lots of method. Try to use this no matter what you are doing.
 3. Remember to `clear` containers
 4. Calm down.
+
+# 160 Intersection of Two Linked Lists
+## when meet the linked list problem, think about two pointers.
+For finding the intersection
+`a+c+b = b+c+a`
+this can help us solve it.
