@@ -31,3 +31,16 @@ vector1+vector2 = vector1.insert(vector1.end(), vector2.begin(), vector2.end());
 *Tree -> recursion*
 
 For preorder traversal, top part has been dealed. 
+
+
+# Letter Combinations of a Phone Number
+
+## push multiple value in vector:
+```cpp
+vec = {a,b,c,d,e};
+```
+
+## push multiple key+value in map:
+```cpp
+map = {{key1, value1}, {key2, value2}};
+```
