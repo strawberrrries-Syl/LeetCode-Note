@@ -14,3 +14,8 @@ max({int1, in2, in3});  //get max value from a set of number.
 For finding the intersection
 `a+c+b = b+c+a`
 this can help us solve it.
+
+# 94. Binary Tree Inorder Traversal
+`Inorder Traversal` -- 中序遍历
+`Preorder Traversal` -- 前序遍历
+`Postorder Traversal` -- 后序遍历
