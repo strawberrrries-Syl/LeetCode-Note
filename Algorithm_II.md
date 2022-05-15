@@ -26,3 +26,8 @@ this can help us solve it.
 vector1, vector2;
 vector1+vector2 = vector1.insert(vector1.end(), vector2.begin(), vector2.end());
 ```
+
+# 116. Populating Next Right Pointers in Each Node *
+*Tree -> recursion*
+
+For preorder traversal, top part has been dealed. 
