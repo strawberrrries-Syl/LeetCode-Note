@@ -33,6 +33,7 @@ vector1+vector2 = vector1.insert(vector1.end(), vector2.begin(), vector2.end());
 For preorder traversal, top part has been dealed. 
 
 
+
 # 17. Letter Combinations of a Phone Number
 Searching problem. `dfs` deep first search. `bfs` broad first search.
 ## push multiple value in vector:
@@ -54,3 +55,8 @@ too complicated.
 
 start position has characters:  left number is smaller than it or itself is at the 0 position.
 
+
+# 49. Group Anagrams
+
+**REMEMBER**
+`string` can be sorted too.
