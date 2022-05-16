@@ -44,3 +44,13 @@ vec = {a,b,c,d,e};
 ```cpp
 map = {{key1, value1}, {key2, value2}};
 ```
+
+# 34. Find First and Last Position of Element in Sorted Array
+## Think of hashmap
+too complicated.
+## binary search
+1. find the start
+2. find the end
+
+start position has characters:  left number is smaller than it or itself is at the 0 position.
+
