@@ -122,5 +122,83 @@ need queue;
 
 push all nodes which has value '1'. Then test its arround area. Until there's nothing in queue.
 
+**IMPORTANT**
+key thought is broad first.
 
+maintain a queue ti store all the point need to be dealed with.
+
+Boundary: when there's nothing in the queue, the bfs can stop.
+
+```cpp
+class Solution {
+    
+public: 
+    void bfs(vector<vector<char>>& grid, queue<vector<int>> q) {
+        vector<int> pos;
+        while(q.size() > 0)
+        {
+            pos = q.front();
+            q.pop();
+            int r = pos[0];
+            int c = pos[1];
+            if(grid[r][c] == '1')
+            {
+                grid[r][c] = '0';
+                if(c < grid[0].size() - 1)
+                {
+                  if(grid[r][c+1] == '1')
+                  {
+                      pos = {r, c+1};
+                      q.push(pos);
+                  }
+                }
+                if(r < grid.size() - 1)
+                {
+                    if(grid[r+1][c]=='1')
+                    {
+                        pos = {r+1, c};
+                        q.push(pos);
+                        
+                    }
+                }
+                if(r>0)
+                {
+                    if(grid[r-1][c] == '1')
+                    {
+                        pos = {r-1, c};
+                        q.push(pos);
+                    }
+                }
+                if(c>0)
+                {
+                    if(grid[r][c-1] == '1')
+                    {
+                        pos = {r,c-1};
+                        q.push(pos);
+                    }
+                }
+            }
+        }
+    }
+public:
+    int numIslands(vector<vector<char>>& grid) {
+        int cnt = 0;
+        queue<vector<int>> q;
+        for(int i = 0; i < grid.size(); i++)
+        {
+            for(int j = 0; j < grid[i].size(); j++)
+            {
+                if(grid[i][j] == '1')
+                {
+                    cnt ++;
+                    vector<int> pos = {i,j};
+                    q.push(pos);
+                    bfs(grid, q);
+                }
+            }
+        }
+        return cnt;
+    }
+};
+```
 
