@@ -60,3 +60,20 @@ start position has characters:  left number is smaller than it or itself is at t
 
 **REMEMBER**
 `string` can be sorted too.
+
+
+# 200. Number of Island
+Classic problem of `dfs`, `bfs`.
+
+## DFS (Deep First Search)
+test 1, and uniform every neighbor 1 to 0. 
+
+write a dfs function to traverse tge graph. As long as you meet '1', change it to '0';
+
+## BFS (Broad First Search)
+need queue;
+
+push all nodes which has value '1'. Then test its arround area. Until there's nothing in queue.
+
+
+
