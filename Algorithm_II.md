@@ -70,6 +70,53 @@ test 1, and uniform every neighbor 1 to 0.
 
 write a dfs function to traverse tge graph. As long as you meet '1', change it to '0';
 
+```cpp
+class Solution {
+public:
+    void dfs(vector<vector<char>>& grid, int r, int c) {
+        if(grid[r][c] == '1')
+        {
+            grid[r][c] = '0';
+            if(c+1 < grid[0].size())
+            {
+               dfs(grid, r, c+1); 
+            }
+            if(r+1 < grid.size())
+            {
+                dfs(grid, r+1, c);
+            }
+            if(r>0)
+            {
+               dfs(grid, r-1, c); 
+            }
+            if(c>0)
+            {
+                dfs(grid, r, c-1);
+            }
+        }
+    }
+    
+public:
+    int numIslands(vector<vector<char>>& grid) {
+        int cnt = 0;
+        for(int i = 0; i < grid.size(); i++)
+        {
+            for(int j = 0; j < grid[i].size(); j++)
+            {
+                if(grid[i][j] == '1')
+                {
+                    dfs(grid, i, j);
+                    cnt ++;
+                }
+            }
+        }
+        return cnt;
+    }
+};
+```
+
+
+
 ## BFS (Broad First Search)
 need queue;
 
