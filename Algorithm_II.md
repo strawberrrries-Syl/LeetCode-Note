@@ -34,7 +34,7 @@ For preorder traversal, top part has been dealed.
 
 
 # 17. Letter Combinations of a Phone Number
-
+Searching problem. `dfs` deep first search. `bfs` broad first search.
 ## push multiple value in vector:
 ```cpp
 vec = {a,b,c,d,e};
