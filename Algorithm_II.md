@@ -202,3 +202,18 @@ public:
 };
 ```
 
+# 22. Generate Parentheses
+A classic `backtracking` problem
+
+*Whe will you use backtracking method?*
+
+when you need to output every result from running.
+
+This problem is a classic one.
+
+*How to use it?*
+1. give a changebal vector to store every single answer from your code and pass as a parameter of your helper function. 
+2. Everytime when you are in the end of handling, push back it.
+
+
+
