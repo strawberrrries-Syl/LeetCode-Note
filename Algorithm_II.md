@@ -32,7 +32,9 @@ vector1+vector2 = vector1.insert(vector1.end(), vector2.begin(), vector2.end());
 
 For preorder traversal, top part has been dealed. 
 
-
+**Important Thinking**
+Remember to use the next domain in the Node. 
+You can use next to serch previous level's value!!!
 
 # 17. Letter Combinations of a Phone Number
 Searching problem. `dfs` deep first search. `bfs` broad first search.
