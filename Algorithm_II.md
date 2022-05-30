@@ -160,7 +160,6 @@ public:
                     {
                         pos = {r+1, c};
                         q.push(pos);
-                        
                     }
                 }
                 if(r>0)
