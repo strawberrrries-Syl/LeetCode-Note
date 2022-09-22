@@ -10,10 +10,15 @@ deque<T> name;
 deque<T> name(n, elem);
 deque<T> name(n);
 
+
+
 ```
 
 # 3. operations
 ```cpp
+d[idx]; //
+d.at(idx);  //这两种方式都可以取值
+
 d.begin(); d.cend();
 d.rbegin(); d.rend();
 d.front(); d.end();
