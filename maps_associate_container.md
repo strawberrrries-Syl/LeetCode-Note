@@ -81,3 +81,6 @@ map.count(key);  // 找到返回1，没找到返回0
 
 bool map.empty();
 ```
+
+# 5. multimap
+与map相同，但允许多个相同值出现
