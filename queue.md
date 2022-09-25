@@ -9,7 +9,7 @@ queue<int> q;
 ```cpp
 q.push();   // 尾端加入
 q.pop();    // 头端删除
-q.front();    // 返回第一个元素
+q.front();    // 返回第一个元素 no delete
 q.back();   // 返回最后一个元素
 
 ```
