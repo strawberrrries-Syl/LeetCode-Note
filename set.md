@@ -8,7 +8,7 @@
 set<int> s;
 // 排好序
 s.insert(int i);
-
+s.erase();
 
 ```
 

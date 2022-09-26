@@ -54,11 +54,12 @@ str.size();
 str[idx];   // 访问
 
 
-str.find(char c, int pos);  // 向后找
+str.find(char c, int pos);  // 向后找   // 如果没有相同值，返回-1；
+// if not found, return std::string::npos
 str.rfind(char c, int pos); // 向前找
 string.find("");  // find first one
 string.rfind("");  // find last one
-string.substr(start_pos, end_pos); // get sub-string
+string.substr(start_pos, len); // get sub-string
 
 // int to string
 to_string(int);
