@@ -47,4 +47,11 @@ for(auto x : vec)
 {
     x;
 }
+// 或者这样
+for (auto i = v.begin(); i != v.end(); i++)
+    {
+        cout << *i << endl;
+    }
+
+// 迭代器是指针，可以通过取值符号得到
 ```

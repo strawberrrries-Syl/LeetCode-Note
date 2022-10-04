@@ -1,7 +1,9 @@
 # Difference between `map` & `unordered_map`
 *`unordered_map`在用迭代器输出时是按key有序的*
 
-**`unordered_map`不可以用vector做key，`map`可以**
+**`unordered_map`不可以用vector做key，`map`可以。**
+
+**`unordered_map`不是按插入顺序存的。**
 
 # 1. init  `map`是红黑树构成的
 ```cpp

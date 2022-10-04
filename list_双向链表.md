@@ -22,4 +22,14 @@ l.back();
 // 这两个操作map没有
 l.reverse();    // reverse
 l.sort();
+
+l.push_front();
+l.pop_front();
+
+l.push_back();
+l.pop_back();
+
+l.insert(iter pos, T value);
+l.erase(iter pos);
+l.remove(T value);
 ```

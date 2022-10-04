@@ -17,4 +17,6 @@ double sqrt(double);
 
 int abs(int);
 double fabs(double);
+
+int rand(); // 随机数
 ```
