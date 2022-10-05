@@ -32,4 +32,16 @@ l.pop_back();
 l.insert(iter pos, T value);
 l.erase(iter pos);
 l.remove(T value);
+
+// 重点api
+l.splice(iter pos, list l, iter element);
+//在list l 的 迭代器 pos处，插入迭代器为element 的元素，并交换
+void splice (iterator position, list& x);
+// 将整个list x的元素，transfer到container中
+void splice (iterator position, list& x, iterator i);
+// 将x中的元素itransfer到容器的位置pos处
+void splice (iterator position, list& x, iterator 
+first, iterator last);
+// 将x中从first到las的元素transfer到容器位置pos处
+
 ```
