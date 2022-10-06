@@ -68,6 +68,9 @@ stoi(string);
 stof();
 stol();
 stod();
+// char to string
+string s(nums, char);
+// 用构造函数，直接用所给char构造值。
 ```
 ## stringstream:
 ### 1. turn int to string
