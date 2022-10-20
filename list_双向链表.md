@@ -39,7 +39,7 @@ l.splice(iter pos, list l, iter element);
 void splice (iterator position, list& x);
 // 将整个list x的元素，transfer到container中
 void splice (iterator position, list& x, iterator i);
-// 将x中的元素itransfer到容器的位置pos处
+// 将x中的元素i transfer到容器的位置pos处
 void splice (iterator position, list& x, iterator 
 first, iterator last);
 // 将x中从first到las的元素transfer到容器位置pos处
