@@ -9,6 +9,9 @@ first in, largest out.
 
 priority_queue<int> pq; // 默认是大顶堆
 
+vector<int> nums;
+priority_queue<int> q(nums.begin(), nums.end());
+
 // or
 priority_queue<template, container, cmp> pq;
 // 可以通过lambda函数实现小顶堆
@@ -22,5 +25,7 @@ pq.top();
 pq.pop();
 pq.push();
 pq.size();
+
+
 ```
 
