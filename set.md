@@ -22,7 +22,14 @@ s.end();
 
 s.size();
 
+s.lower_bound(x); /* 返回第一个大于等于x的迭代器 */
+s.upper_bound(x); /* 返回第一个大于x的迭代器 */
+
 ```
 
 # 4. multiset
-可以允许多个相同值出现
+可以允许多个相同值出现.
+用法和set相似
+```cpp
+multiset<int> ms;
+```
