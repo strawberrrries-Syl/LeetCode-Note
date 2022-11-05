@@ -15,7 +15,8 @@ priority_queue<int> q(nums.begin(), nums.end());
 // or
 priority_queue<template, container, cmp> pq;
 // 可以通过lambda函数实现小顶堆
-priority_queue<T, vector<int>, less<int>> pql;  // 小顶堆
+priority_queue<T, vector<int>, less<int>> pql;  // 大顶堆
+priority_queue<T, vector<int>, greater<int>> pql;  // 小顶堆
 
 ```
 
